@@ -80,49 +80,11 @@ def salir():
     time.sleep(3)
     borrarPantalla()
 
-def menu():
-    print("**********Menú*************\n1.- Agregar alumno\n2.- Mostrar lista\n3.- Buscar articulo\n4.- Actualizar articulo\n5.- Eliminar articulo\n6.- Salir\nIndique su opción:\n")
+def menu(opción:int=0):
+   opción=int( input("**********Menú*************\n1.- Agregar alumno\n2.- Mostrar lista\n3.- Buscar articulo\n4.- Actualizar articulo\n5.- Eliminar articulo\n6.- Salir\nIndique su opción:\n"))
+   return opcion
 
-def borrarPantalla():
-    os.system("cls") if os.name == "nt" else os.system("clear")
-
-
-borrarPantalla()
-print("Bienvenido a lista de alumnos\n")
-
-opcion:int=0
-
-while opcion != 6:
-    
-    try:
-        borrarPantalla()
-        menu()
-        opcion=int(input("\nIndique una opción\n"))
-
-        match opcion:
-            case 1:
-                borrarPantalla()
-                agregarAlumno()
-            case 2:
-                borrarPantalla()
-                mostrarAlumnos()
-            case 3:
-                borrarPantalla()
-                buscarAlumno()
-            case 4:
-                borrarPantalla()
-                actualizarAlumno()
-            case 5:
-                borrarPantalla()
-                eliminarAlumno()
-            case 6:
-                borrarPantalla()
-                salir()
-            case _:
-                input("\nOpción no existente\nPresione una tecla para continuar . . .\n")
-    except ValueError:
-        input("\nDebe introducir un dato valido por teclado\nPresione una tecla para continuar . . .\n") 
-    except Exception as e:
-        input(f"\nOcurrió un error: {e}\nPresione una tecla para continuar . . .\n")
+def diferente():
+    input("\nOpción no existente\nPresione una tecla para continuar . . .\n")
 
 
