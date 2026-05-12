@@ -10,10 +10,9 @@ opcion:int=0
 while opcion != 6:
     
     try:
-       
-        menu()
+        opcion = menu()
 
-        match menu(opcion):
+        match opcion:
             case 1:
                 agregarAlumno()
             case 2:
