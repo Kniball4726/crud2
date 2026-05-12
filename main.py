@@ -1,5 +1,3 @@
-import os
-
 from funciones import actualizarAlumno, agregarAlumno, buscarAlumno, eliminarAlumno, menu, mostrarAlumnos, salir, diferente
 
 def inicio():
