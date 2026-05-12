@@ -1,4 +1,4 @@
-from funciones import actualizarAlumno, agregarAlumno, buscarAlumno, eliminarAlumno, menu, mostrarAlumnos, salir, diferente
+from src.funciones import actualizarAlumno, agregarAlumno, buscarAlumno, eliminarAlumno, menu, mostrarAlumnos, salir, diferente
 
 def inicio():
     print("Bienvenido a lista de alumnos\n")
