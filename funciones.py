@@ -13,6 +13,7 @@ def borrarPantalla():
     os.system("cls") if os.name == "nt" else os.system("clear")
 
 def agregarAlumno():
+    borrarPantalla()
     print("\nAgregar alumno\n")
     alumno=input("\nIndique nombre del alumno a guardar\n").capitalize()
     if alumno in alumnos:
@@ -22,6 +23,7 @@ def agregarAlumno():
         input("\nAlumno agregado\nPresiona una tecla para continuar . . .\n ")
 
 def mostrarAlumnos():
+    borrarPantalla()
     if len(alumnos) == 0:
         input("\nNo hay alumnos guardados\nPresione una tecla para continuar . . .\n")
     else:
@@ -33,6 +35,7 @@ def mostrarAlumnos():
     input("\nPulse alguna tecla para salir . . .\n")
 
 def buscarAlumno():
+    borrarPantalla()
     print("\nBuscar alumno\n")
     alumno=input("\nIndique el alumno a buscar\n").capitalize()
     if alumno in alumnos:
@@ -41,6 +44,7 @@ def buscarAlumno():
         input("\nAlumno no encontrado\nPresione una tecla para continuar . . . .\n")
 
 def actualizarAlumno():
+    borrarPantalla()
     print("\nActualizar alumno\n")
     numeracion=1
     for a in alumnos:
@@ -58,6 +62,7 @@ def actualizarAlumno():
 
 
 def eliminarAlumno():
+    borrarPantalla()
     print("\nEliminar alumno\n")
     numeracion=1
     for a in alumnos:
@@ -73,6 +78,7 @@ def eliminarAlumno():
 
 
 def salir():
+    borrarPantalla()
     input("\nSaliendo . . . .\nPresione una tecla para continuar")
     borrarPantalla()
     print("Gracias por usar el programa\n")
@@ -81,10 +87,12 @@ def salir():
     borrarPantalla()
 
 def menu(opción:int=0):
+   borrarPantalla()
    opción=int( input("**********Menú*************\n1.- Agregar alumno\n2.- Mostrar lista\n3.- Buscar articulo\n4.- Actualizar articulo\n5.- Eliminar articulo\n6.- Salir\nIndique su opción:\n"))
    return opcion
 
 def diferente():
+    borrarPantalla()
     input("\nOpción no existente\nPresione una tecla para continuar . . .\n")
 
 
