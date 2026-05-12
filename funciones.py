@@ -86,7 +86,7 @@ def salir():
     time.sleep(3)
     borrarPantalla()
 
-def menu(opción:int=0):
+def menu():
    borrarPantalla()
    opción=int( input("**********Menú*************\n1.- Agregar alumno\n2.- Mostrar lista\n3.- Buscar articulo\n4.- Actualizar articulo\n5.- Eliminar articulo\n6.- Salir\nIndique su opción:\n"))
    return opcion
