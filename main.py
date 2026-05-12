@@ -10,11 +10,10 @@ opcion:int=0
 while opcion != 6:
     
     try:
-        borrarPantalla()
+       
         menu()
-        opcion=int(input("\nIndique una opción\n"))
 
-        match opcion:
+        match menu(opcion):
             case 1:
                 agregarAlumno()
             case 2:
